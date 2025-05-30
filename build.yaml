@@ -18,3 +18,8 @@
 #     artifact-name: corne_left_with_studio
 #
 ---
+include:
+  - board: calvin_toprevan
+  - board: calvin_toprevan
+    snippet: enable_ec_calibrator
+    artifact-name: calvin_toprevan_calibrator
