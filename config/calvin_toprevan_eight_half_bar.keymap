@@ -27,13 +27,13 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&sk LSHFT>, <&caps_word>;
-            mods = <(MOD_RSHFT)>;
+            mods = <(MOD_RSFT)>;
         };
         rscaps: right_shift_capslock {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&sk RSHFT>, <&caps_word>;
-            mods = <(MOD_LSHFT)>;
+            mods = <(MOD_LSFT)>;
         };
         bdel: backspace_delete {
             compatible = "zmk,behavior-mod-morph";
