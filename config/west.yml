@@ -12,10 +12,10 @@ manifest:
       revision: bootloader/retention-boot-mode-support
       import: app/west.yml
     - name: toprevan-zmk-module
-      remote: petejohanson
+      remote: oN5cZvY1Jj
       revision: main
     - name: ec-support-zmk-module
-      remote: petejohanson
+      remote: oN5cZvY1Jj
       revision: main
   self:
     path: config
