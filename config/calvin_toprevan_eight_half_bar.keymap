@@ -76,7 +76,7 @@
             display-name = "Right";
             bindings = <
 &trans      &trans       &trans   &trans      &trans         &trans       &trans           &trans         &trans      &kp LBKT   &kp RBKT       &trans
-&trans      &trans       &trans   &trans      &trans         &trans       &kp LEFT         &kp UP         &kp DOWN    &kp RIGHT  &kp SEMI       &trans
+&trans      &trans       &trans   &trans      &trans         &trans       &kp LEFT         &kp DOWN       &kp UP      &kp RIGHT  &kp SEMI       &trans
 &trans      &trans       &trans   &trans      &trans         &trans       &kp HOME         &kp PG_DN      &kp PG_UP   &kp END    &kp BSLH       &trans
 &trans      &trans                                                        &trans                                                 &trans         &trans
             >;
