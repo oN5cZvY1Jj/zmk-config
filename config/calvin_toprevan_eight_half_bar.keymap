@@ -47,9 +47,10 @@
             bindings = <&kp TAB>, <&kp TILDE>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-        &sk {
-            quick-release;
-        };
+    };
+
+    &sk {
+        quick-release;
     };
 
     keymap {
