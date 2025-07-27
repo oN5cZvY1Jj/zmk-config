@@ -71,7 +71,7 @@
             bindings = <
 &kp GRAVE   &kp MINUS    &kp EQUAL &kp N9      &kp N0         &trans       &trans           &trans         &trans      &trans     &trans        &trans
 &kp TAB     &kp N5       &kp N6    &kp N7      &kp N8         &trans       &trans           &trans         &trans      &trans     &trans        &trans
-&trans      &kp N1       &kp N2    &kp N3      &kp N4         &trans       &trans           &trans         &trans      &sk RSHFT  &trans        &trans
+&trans      &kp N1       &kp N2    &kp N3      &kp N4         &trans       &trans           &sk RSHFT      &trans      &trans     &trans        &trans
 &trans      &trans                                                         &trans                                                 &trans        &trans
             >;
         };
