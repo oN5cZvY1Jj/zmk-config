@@ -60,7 +60,7 @@
             display-name = "Base";
             bindings = <
 &gresc      &kp Q        &kp W    &kp E       &kp R          &kp T        &kp Y            &kp U          &kp I       &kp O      &kp P         &bdel
-&ttilde     &kp A        &kp S    &kp D       &kp F          &kp G        &kp H            &kp J          &kp K       &kp L      &kp QUOT      &kp RET
+&sl RIGHT_L &kp A        &kp S    &kp D       &kp F          &kp G        &kp H            &kp J          &kp K       &kp L      &kp QUOT      &sl LEFT_L
 &lscaps     &kp Z        &kp X    &kp C       &kp V          &kp B        &kp N            &kp M          &kp COMMA   &kp DOT    &kp FSLH      &rscaps
 &sk LGUI    &sl RIGHT_L                                                   &kp SPACE                                              &sl LEFT_L    &sk RCTL
             >;
@@ -69,8 +69,8 @@
         left_layer {
             display-name = "Left";
             bindings = <
-&trans      &kp MINUS    &kp EQUAL &kp N9      &kp N0         &trans       &trans           &trans         &trans      &trans     &trans        &trans
-&trans      &kp N5       &kp N6    &kp N7      &kp N8         &trans       &trans           &trans         &trans      &trans     &trans        &trans
+&kp GRAVE   &kp MINUS    &kp EQUAL &kp N9      &kp N0         &trans       &trans           &trans         &trans      &trans     &trans        &trans
+&kp TAB     &kp N5       &kp N6    &kp N7      &kp N8         &trans       &trans           &trans         &trans      &trans     &trans        &trans
 &trans      &kp N1       &kp N2    &kp N3      &kp N4         &trans       &trans           &trans         &trans      &trans     &trans        &trans
 &trans      &trans                                                         &trans                                                 &trans        &trans
             >;
@@ -80,7 +80,7 @@
             display-name = "Right";
             bindings = <
 &trans      &trans       &trans   &trans      &trans         &trans       &trans           &trans         &trans      &kp LBKT   &kp RBKT       &trans
-&trans      &trans       &trans   &trans      &trans         &trans       &kp LEFT         &kp DOWN       &kp UP      &kp RIGHT  &kp SEMI       &trans
+&trans      &trans       &trans   &trans      &trans         &trans       &kp LEFT         &kp DOWN       &kp UP      &kp RIGHT  &kp SEMI       &kp RET
 &trans      &trans       &trans   &trans      &trans         &trans       &kp HOME         &kp PG_DN      &kp PG_UP   &kp END    &kp BSLH       &trans
 &trans      &trans                                                        &trans                                                 &trans         &trans
             >;
