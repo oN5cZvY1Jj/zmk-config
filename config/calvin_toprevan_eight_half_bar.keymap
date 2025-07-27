@@ -71,7 +71,7 @@
             bindings = <
 &kp GRAVE   &kp MINUS    &kp EQUAL &kp N9      &kp N0         &trans       &trans           &trans         &trans      &trans     &trans        &trans
 &kp TAB     &kp N5       &kp N6    &kp N7      &kp N8         &trans       &trans           &trans         &trans      &trans     &trans        &trans
-&trans      &kp N1       &kp N2    &kp N3      &kp N4         &trans       &trans           &trans         &trans      &trans     &trans        &trans
+&trans      &kp N1       &kp N2    &kp N3      &kp N4         &trans       &trans           &trans         &trans      &sk RSHFT  &trans        &trans
 &trans      &trans                                                         &trans                                                 &trans        &trans
             >;
         };
@@ -81,7 +81,7 @@
             bindings = <
 &trans      &trans       &trans   &trans      &trans         &trans       &trans           &trans         &trans      &kp LBKT   &kp RBKT       &trans
 &trans      &trans       &trans   &trans      &trans         &trans       &kp LEFT         &kp DOWN       &kp UP      &kp RIGHT  &kp SEMI       &kp RET
-&trans      &trans       &trans   &trans      &trans         &trans       &kp HOME         &kp PG_DN      &kp PG_UP   &kp END    &kp BSLH       &trans
+&trans      &trans       &trans   &sk LSHFT   &trans         &trans       &kp HOME         &kp PG_DN      &kp PG_UP   &kp END    &kp BSLH       &trans
 &trans      &trans                                                        &trans                                                 &trans         &trans
             >;
         };
