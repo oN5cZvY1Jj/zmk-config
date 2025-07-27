@@ -10,6 +10,10 @@
 #define LEFT_L 1
 #define RIGHT_L 2
 
+&sk {
+    quick-release;
+};
+
 / {
 
     combos {
@@ -47,10 +51,6 @@
             bindings = <&kp TAB>, <&kp TILDE>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-    };
-
-    &sk {
-        quick-release;
     };
 
     keymap {
