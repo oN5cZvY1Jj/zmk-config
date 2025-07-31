@@ -51,6 +51,12 @@
             bindings = <&kp TAB>, <&kp TILDE>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+        ssemi: semi_shift{
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp COLON>, <&kp SEMI>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     keymap {
@@ -80,7 +86,7 @@
             display-name = "Right";
             bindings = <
 &trans      &trans       &trans   &trans      &trans         &trans       &trans           &trans         &trans      &kp LBKT   &kp RBKT       &trans
-&trans      &trans       &trans   &trans      &trans         &trans       &kp LEFT         &kp DOWN       &kp UP      &kp RIGHT  &kp SEMI       &trans
+&trans      &trans       &trans   &trans      &trans         &trans       &kp LEFT         &kp DOWN       &kp UP      &kp RIGHT  &ssemi         &trans
 &trans      &trans       &trans   &trans      &trans         &trans       &kp HOME         &kp PG_DN      &kp PG_UP   &kp END    &kp BSLH       &trans
 &trans      &trans                                                        &trans                                                 &trans         &trans
             >;
