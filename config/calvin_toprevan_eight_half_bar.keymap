@@ -16,7 +16,7 @@
 };
 
 &lt {
-    tapping-term-ms = <500>;
+    tapping-term-ms = <9999>;
     flavor = "balanced";
     quick-tap-ms = <250>;
 };
@@ -29,6 +29,28 @@
             key-positions = <0 11>;
             timeout-ms = <150>;
             bindings = <&bootloader>;
+        };
+    };
+
+    macros {
+        exiterm: exiterm {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCTL>
+                , <&macro_tap &kp BSLH &kp N>
+                , <&macro_release &kp LCTL>
+                ;
+        };
+        tmuxscroll: tmuxscroll {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCTL>
+                , <&macro_tap &kp A>
+                , <&macro_release &kp LCTL>
+                , <&macro_tap &kp PG_UP>
+                ;
         };
     };
 
