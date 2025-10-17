@@ -32,28 +32,28 @@
         };
     };
 
-    macros {
-        exiterm: exiterm {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LCTL>
-                , <&macro_tap &kp BSLH &kp N>
-                , <&macro_release &kp LCTL>
-                ;
-        };
-        tmuxscroll: tmuxscroll {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LCTL>
-                , <&macro_tap &kp A>
-                , <&macro_release &kp LCTL>
-                , <&macro_tap &kp PG_UP>
-                ;
-        };
-    };
-
+/*    macros {
+ *       exiterm: exiterm {
+ *            compatible = "zmk,behavior-macro";
+ *            #binding-cells = <0>;
+ *            bindings
+ *                = <&macro_press &kp LCTL>
+ *                , <&macro_tap &kp BSLH &kp N>
+ *                , <&macro_release &kp LCTL>
+ *                ;
+ *        };
+ *        tmuxscroll: tmuxscroll {
+ *            compatible = "zmk,behavior-macro";
+ *            #binding-cells = <0>;
+ *            bindings
+ *                = <&macro_press &kp LCTL>
+ *                , <&macro_tap &kp A>
+ *                , <&macro_release &kp LCTL>
+ *                , <&macro_tap &kp PG_UP>
+ *                ;
+ *        };
+ *    };
+ */
     behaviors {
         lscaps: left_shift_capslock {
             compatible = "zmk,behavior-mod-morph";
@@ -67,23 +67,23 @@
             bindings = <&sk RSHFT>, <&caps_word>;
             mods = <(MOD_LSFT)>;
         };
-        bdel: backspace_delete {
+        egr: egr{
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp BACKSPACE>, <&kp DELETE>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-        ttilde: tab_tilde{
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp TAB>, <&kp TILDE>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
+            bindings = <&kp ESC>, <&kp GRAVE>;
+            mods = <(MOD_RCTL)>;
         };
         ssemi: semi_shift{
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp COLON>, <&kp SEMI>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        bootd: bootd{
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp BSPC>, <&bootloader>;
+            mods = <(MOD_RCTL)>;
         };
     };
 
@@ -93,8 +93,8 @@
         base_layer {
             display-name = "Base";
             bindings = <
-&gresc      &kp Q        &kp W    &kp E       &kp R          &kp T        &kp Y            &kp U          &kp I       &kp O      &kp P         &bdel
-&ttilde     &kp A        &kp S    &kp D       &kp F          &kp G        &kp H            &kp J          &kp K       &kp L      &kp QUOT      &kp RET
+&egr        &kp Q        &kp W    &kp E       &kp R          &kp T        &kp Y            &kp U          &kp I       &kp O      &kp P         &bootd
+&kp TAB     &kp A        &kp S    &kp D       &kp F          &kp G        &kp H            &kp J          &kp K       &kp L      &kp QUOT      &kp RET
 &lscaps     &kp Z        &kp X    &kp C       &kp V          &kp B        &kp N            &kp M          &kp COMMA   &kp DOT    &kp FSLH      &rscaps
 &sk LGUI    &sl RIGHT_L                                                   &lt NUMBERS SPACE                                      &sl LEFT_L    &sk RCTL
             >;
