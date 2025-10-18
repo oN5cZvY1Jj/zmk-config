@@ -21,26 +21,27 @@
     quick-tap-ms = <250>;
 };
 
-/ macros {
-    exiterm: exiterm {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        bindings
-            = <&macro_press &kp LCTL>
-            , <&macro_tap &kp BSLH &kp N>
-            , <&macro_release &kp LCTL>
-            ;
+/ {
+    macros {
+        exiterm: exiterm {
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+              = <&macro_press &kp LCTL>
+              , <&macro_tap &kp BSLH &kp N>
+              , <&macro_release &kp LCTL>
+              ;
         };
-    tmuxscroll: tmuxscroll {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        bindings
-            = <&macro_press &kp LCTL>
-            , <&macro_tap &kp A>
-            , <&macro_release &kp LCTL>
-            , <&macro_tap &kp PG_UP>
-            ;
-        };
+        tmuxscroll: tmuxscroll {
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+              = <&macro_press &kp LCTL>
+              , <&macro_tap &kp A>
+              , <&macro_release &kp LCTL>
+              , <&macro_tap &kp PG_UP>
+              ;
+          };
     };
 
     behaviors {
