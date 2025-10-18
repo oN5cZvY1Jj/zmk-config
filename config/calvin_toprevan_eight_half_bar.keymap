@@ -21,39 +21,28 @@
     quick-tap-ms = <250>;
 };
 
-/ {
-    combos {
-        compatible = "zmk,combos";
-
-        boot_combo {
-            key-positions = <0 11>;
-            timeout-ms = <150>;
-            bindings = <&bootloader>;
+/ macros {
+    exiterm: exiterm {
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        bindings
+            = <&macro_press &kp LCTL>
+            , <&macro_tap &kp BSLH &kp N>
+            , <&macro_release &kp LCTL>
+            ;
+        };
+    tmuxscroll: tmuxscroll {
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        bindings
+            = <&macro_press &kp LCTL>
+            , <&macro_tap &kp A>
+            , <&macro_release &kp LCTL>
+            , <&macro_tap &kp PG_UP>
+            ;
         };
     };
 
-/*    macros {
- *       exiterm: exiterm {
- *            compatible = "zmk,behavior-macro";
- *            #binding-cells = <0>;
- *            bindings
- *                = <&macro_press &kp LCTL>
- *                , <&macro_tap &kp BSLH &kp N>
- *                , <&macro_release &kp LCTL>
- *                ;
- *        };
- *        tmuxscroll: tmuxscroll {
- *            compatible = "zmk,behavior-macro";
- *            #binding-cells = <0>;
- *            bindings
- *                = <&macro_press &kp LCTL>
- *                , <&macro_tap &kp A>
- *                , <&macro_release &kp LCTL>
- *                , <&macro_tap &kp PG_UP>
- *                ;
- *        };
- *    };
- */
     behaviors {
         lscaps: left_shift_capslock {
             compatible = "zmk,behavior-mod-morph";
