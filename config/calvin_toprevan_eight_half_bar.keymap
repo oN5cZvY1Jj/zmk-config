@@ -43,6 +43,17 @@
               , <&macro_tap &kp PG_UP>
               ;
           };
+        macshot: macshot {
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+              = <&macro_press &kp LSFT>
+              , <&macro_press &kp LGUI>
+              , <&macro_tap &kp N4>
+              , <&macro_release &kp LSFT>
+              , <&macro_release &kp LGUI>
+              ;
+          };
     };
     behaviors {
         lscaps: left_shift_capslock {
@@ -108,7 +119,7 @@
             display-name = "Numbers";
             bindings = <
 &exiterm    &kp N1       &kp N2   &kp N3      &kp N4         &kp N5       &kp N6           &kp N7         &kp N8      &kp N9     &kp N0         &trans
-&trans      &trans       &trans   &trans      &trans         &trans       &trans           &trans         &trans      &trans     &trans         &trans
+&macshot    &trans       &trans   &trans      &trans         &trans       &trans           &trans         &trans      &trans     &trans         &trans
 &trans      &trans       &trans   &trans      &trans         &trans       &trans           &trans         &trans      &trans     &trans         &trans
 &trans      &trans                                                        &trans                                                 &trans         &trans
             >;
