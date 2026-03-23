@@ -8,8 +8,7 @@ manifest:
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
   projects:
     - name: zmk
-      remote: petejohanson
-      revision: bootloader/retention-boot-mode-support
+      remote: zmkfirmware
       import: app/west.yml
     - name: toprevan-zmk-module
       remote: petejohanson
