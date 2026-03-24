@@ -23,16 +23,6 @@
 
 / {
     macros {
-        exiterm: exiterm {
-          compatible = "zmk,behavior-macro";
-          #binding-cells = <0>;
-          bindings
-              = <&macro_press &kp LCTL>
-              , <&macro_tap &kp BSLH>
-              , <&macro_tap &kp N>
-              , <&macro_release &kp LCTL>
-              ;
-        };
         tmuxscroll: tmuxscroll {
           compatible = "zmk,behavior-macro";
           #binding-cells = <0>;
@@ -118,8 +108,8 @@
         numbers {
             display-name = "Numbers";
             bindings = <
-&exiterm    &kp N1       &kp N2   &kp N3      &kp N4         &kp N5       &kp N6           &kp N7         &kp N8      &kp N9     &kp N0         &trans
-&macshot    &trans       &trans   &trans      &trans         &trans       &trans           &trans         &trans      &trans     &trans         &trans
+&macshot    &kp N1       &kp N2   &kp N3      &kp N4         &kp N5       &kp N6           &kp N7         &kp N8      &kp N9     &kp N0         &trans
+&trans      &trans       &trans   &trans      &trans         &trans       &trans           &trans         &trans      &trans     &trans         &trans
 &trans      &trans       &trans   &trans      &trans         &trans       &trans           &trans         &trans      &trans     &trans         &trans
 &trans      &trans                                                        &trans                                                 &trans         &trans
             >;
