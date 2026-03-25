@@ -14,10 +14,8 @@ manifest:
       revision: main
       import: app/west.yml
     - name: toprevan-zmk-module
-      remote: local
-      revision: zephyr-upgrade
-      # remote: petejohanson
-      # revision: zmk-main-zephyr-41-upgrade
+      remote: petejohanson
+      revision: zmk-main-zephyr-41-upgrade
     - name: ec-support-zmk-module
       remote: petejohanson
       revision: main
