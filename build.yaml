@@ -19,6 +19,11 @@
 #
 ---
 include:
+  - board: calvin_toprevan
+    artifact-name: calvin_toprevan_split
+  - board: calvin_toprevan
+    snippet: enable_ec_calibrator
+    artifact-name: calvin_toprevan_split_calibrator
   - board: calvin_toprevan//eight_half_bar
     artifact-name: calvin_toprevan_eight_half_bar
   - board: calvin_toprevan//eight_half_bar
