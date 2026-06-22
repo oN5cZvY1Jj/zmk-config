@@ -75,20 +75,20 @@
         base_layer {
             display-name = "Base";
             bindings = <
-&kp GRAVE   &kp Q        &kp W       &kp E       &kp R          &kp T        &kp Y            &kp U          &kp I       &kp O      &kp P              &kp BACKSPACE
-&kp LGUI    &kp A        &kp S       &kp D       &kp F          &kp G        &kp H            &kp J          &kp K       &kp L      &kp QUOT           &kp RET
-&lscaps     &kp Z        &kp X       &kp C       &kp V          &kp B        &kp N            &kp M          &kp COMMA   &kp DOT    &kp FSLH           &kp SEMI
-&kp LALT    &lm OPTION LSHIFT        &mo OPTION                 &kp SPACE    &rscaps                         &kp TAB     &mo OPTION &lm OPTION RSHIFT  &kp RCTL
+&kp GRAVE   &kp Q        &kp W       &kp E       &kp R          &kp T        &kp Y            &kp U          &kp I       &kp O             &kp P     &kp BACKSPACE
+&kp LGUI    &kp A        &kp S       &kp D       &kp F          &kp G        &kp H            &kp J          &kp K       &kp L             &kp QUOT  &kp RET
+&lscaps     &kp Z        &kp X       &kp C       &kp V          &kp B        &kp N            &kp M          &kp COMMA   &kp DOT           &kp FSLH  &kp SEMI
+&kp LALT    &lm OPTION LSHIFT        &mo OPTION                 &kp SPACE    &rscaps                         &mo OPTION  &lm OPTION RSHIFT &kp TAB   &kp RCTL
             >;
         };
 
         option {
             display-name = "Option";
             bindings = <
-&kp ESC     &kp N1       &kp N2      &kp N3      &kp N4         &kp N5       &kp N6           &kp N7         &kp N8      &kp N9     &kp N0             &bootloader
-&trans      &trans       &kp LBKT    &kp RBKT    &kp MINUS      &kp EQUAL    &kp LEFT         &kp DOWN       &kp UP      &kp RIGHT  &trans             &trans
-&trans      &macshot     &tmuxscroll &trans      &trans         &trans       &trans           &trans         &trans      &trans     &kp BSLH           &trans
-&trans      &trans                   &trans                     &trans       &trans                          &trans      &trans     &trans             &trans
+&kp ESC     &kp N1       &kp N2      &kp N3      &kp N4         &kp N5       &kp N6           &kp N7         &kp N8      &kp N9            &kp N0    &bootloader
+&trans      &trans       &kp LBKT    &kp RBKT    &kp MINUS      &kp EQUAL    &kp LEFT         &kp DOWN       &kp UP      &kp RIGHT         &trans    &trans
+&trans      &macshot     &tmuxscroll &trans      &trans         &trans       &trans           &trans         &trans      &trans            &kp BSLH  &trans
+&trans      &trans                   &trans                     &trans       &trans                          &trans      &trans            &trans    &trans
             >;
         };
     };
